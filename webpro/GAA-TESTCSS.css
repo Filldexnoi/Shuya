@@ -1,0 +1,14 @@
+.logo-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+img {
+    width: 200px;
+}
+.nav-container {
+    display: flex;
+}
+nav{
+    display: flex;
+}
