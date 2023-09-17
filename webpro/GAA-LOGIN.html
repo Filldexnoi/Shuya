@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="GAA-CSS.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="GAA-NAV.css">
+        <link rel="stylesheet" href="GAA-LOGIN.css">
         <title>GORGOUS AS ALWAYS</title>
     </head>
     <body>
@@ -15,12 +18,17 @@
             <a href="GAA-LOGIN.html">LOG IN</a>
             <a href="GAA-ABOUTUS.html">ABOUT US</a>
         </nav>
-        <section>
+        <section class="login">
             <div class="login-container">
-                <form>
-                    
+                <h1>Log in</h1>
+                <form id="login-form">
+                  <label for="id">ID :</label>
+                  <input type="text" id="id" name="id" required placeholder="Enter your id">
+                  <label for="password">PASSWORD :</label>
+                  <input type="password" id="password" name="password" required placeholder="Enter your password">
+                  <button type="submit">Log in</button>
                 </form>
-            </div>
+              </div>
         </section>
         <footer>  
         </footer>
