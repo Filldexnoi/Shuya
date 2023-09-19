@@ -1,0 +1,118 @@
+button {
+    width: 250px;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    cursor: pointer; 
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+}
+#search {
+    width: 1000px;
+    padding: 15px;
+    margin: 30px 0px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;  
+}
+.SEARCH{
+    display: flex;
+}
+
+.product-container img {
+    width: 250px;
+    height: 350px;
+}
+.product-container {
+    display: flex;
+    align-items: flex-start;
+    width: 650px;
+    border: 1px solid black;
+    margin: 20px 40px ;
+    padding: 10px;
+    
+}
+.container-item {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+.text {
+    width: 100%;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 20px;
+}
+.right-content {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    text-align: center;
+}
+.button-container {
+    margin-top: 40px;
+}
+.button-container button{
+    margin: 20px 0px;
+}
+button.delete {
+    background-color: red;
+    color: white;
+}
+.addbox{
+    background-color: white;
+    padding: 50px 100px;
+    border: 1px solid black;
+    width: 800px;
+    height: 500px;
+}   
+#nameInput, #priceInput,#detailInput{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.color ,.size,.image{
+    margin-top: 20px;
+    font-size: x-large;
+}
+.button-submit {
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+.addbox h1{
+    font-size: xx-large;
+    text-align: center;
+}
+.admin-container {
+    width: 75%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+th {
+    background-color: #f2f2f2;
+}

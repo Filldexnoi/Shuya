@@ -1,23 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="test.css">
-  <title>Login Page</title>
+    <title>Employee List</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-  <div class="login-container">
-    <h1>Login</h1>
-    <form id="login-form">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-      <button type="submit">Login</button>
-    </form>
-  </div>
+    <h1>Employee List</h1>
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>John Doe</td>
+                <td>Manager</td>
+                <td><button onclick="editEmployee('001')">Edit</button><button onclick="deleteEmployee('001')">Delete</button></td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Jane Smith</td>
+                <td>Developer</td>
+                <td><button onclick="editEmployee('002')">Edit</button><button onclick="deleteEmployee('002')">Delete</button></td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
 
-  <script src="script.js"></script>
+    <h2>Add New Employee</h2>
+    <label for="newEmployeeID">ID:</label>
+    <input type="text" id="newEmployeeID"><br>
+    <label for="newEmployeeName">Name:</label>
+    <input type="text" id="newEmployeeName"><br>
+    <label for="newEmployeePosition">Position:</label>
+    <input type="text" id="newEmployeePosition"><br>
+    <button onclick="addEmployee()">Add Employee</button>
+
+    
 </body>
 </html>

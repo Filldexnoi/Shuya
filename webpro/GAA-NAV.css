@@ -25,9 +25,15 @@ nav a{
     text-decoration: none;
     color: black;
 }
+nav a:hover{
+    text-decoration: underline;
+
+}
+
 .container img{
     width: 100%;
 }
 nav a img {
     width: 150px;
 }
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="GAA-NAV.css">
+        <link rel="stylesheet" href="GAA-ADMIN-MANAGE.css">
+        <title>GORGOUS AS ALWAYS</title>
+    </head>
+    <body>
+        <header>
+            <a href="GAA-HOME.html" class="logo-container"><img src="picture/logo.png" alt="Logo"></a><b></b>
+        </header>
+        <nav>
+            <a href="GAA-HOME.html">HOME</a>
+            <a href="GAA-PRODUCT.html">PRODUCT</a>
+            <a href="GAA-SEARCH.html"><img src="picture/searchbar.png"></a>
+            <a href="GAA-ADMIN-MANAGE.html">ADMIN</a>
+            <a href="GAA-ABOUTUS.html">ABOUT US</a>
+        </nav>
+        <section class="container">
+            <section class="topic">
+                <a href ="GAA-ADMIN-MANAGE-PRODUCT.html">
+                    <button type="button">MANAGE PRODUCT</button>
+                </a>
+                <a href ="GAA-ADMIN-MANAGE-ACCOUNT.html">
+                    <button type="button">MANAGE ACCOUNT</button>
+                </a>
+            </section>
+            <section class="SEARCH">
+                <form>
+                    <input type="text" id="search" name="search" placeholder="Enter your search">
+                    <button type="submit">SEARCH</button>
+                    <a href="GAA-ADMIN-ADD-ACCOUNT.html"><button type="button">ADD ACCOUNT</button></a>
+                </form>
+            </section>
+            <section class="admin-container">
+                <h1>ADMIN LIST</h1>
+                <table id="adminTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Date edit</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>John Doe</td>
+                        <td>09/10/2023</td>
+                        <td><button onclick="editEmployee('001')">Edit</button><button onclick="deleteEmployee('001')">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Jane Smith</td>
+                        <td>15/10/2023</td>
+                        <td><button onclick="editEmployee('002')">Edit</button><button onclick="deleteEmployee('002')">Delete</button></td>
+                    </tr>
+                </tbody>
+                </table>
+            </section>
+        </section>
+    </body>
+</html>

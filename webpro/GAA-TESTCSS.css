@@ -1,14 +1,47 @@
-.logo-container {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 30px; /* Adjust spacing between checkbox and label */
+    margin-bottom: 10px; /* Adjust spacing between checkboxes */
 }
-img {
-    width: 200px;
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
-.nav-container {
-    display: flex;
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px; /* Adjust the size of the checkbox */
+    width: 20px; /* Adjust the size of the checkbox */
+    background-color: #eee; /* Checkbox background color */
+    border: 1px solid #ccc; /* Checkbox border color */
+    border-radius: 4px; /* Optional: Rounded corners for checkbox */
 }
-nav{
-    display: flex;
+
+.checkbox-container input:checked + .checkmark {
+    background-color: #3498db; /* Checked checkbox background color */
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked + .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="GAA-NAV.css">
+        <link rel="stylesheet" href="GAA-ADMIN-MANAGE.css">
+        <title>GORGOUS AS ALWAYS</title>
+    </head>
+    <body>
+        <header>
+            <a href="GAA-HOME.html" class="logo-container"><img src="picture/logo.png" alt="Logo"></a><b></b>
+        </header>
+        <nav>
+            <a href="GAA-HOME.html">HOME</a>
+            <a href="GAA-PRODUCT.html">PRODUCT</a>
+            <a href="GAA-SEARCH.html"><img src="picture/searchbar.png"></a>
+            <a href="GAA-ADMIN-MANAGE.html">ADMIN</a>
+            <a href="GAA-ABOUTUS.html">ABOUT US</a>
+        </nav>
+        <section class="container">
+            <section class="topic">
+                <a href ="GAA-ADMIN-MANAGE-PRODUCT.html">
+                    <button type="button">MANAGE PRODUCT</button>
+                </a>
+                <a href ="GAA-ADMIN-MANAGE-ACCOUNT.html">
+                    <button type="button">MANAGE ACCOUNT</button>
+                </a>
+            </section>
+            <section class="SEARCH">
+                <form>
+                    <input type="text" id="search" name="search" placeholder="Enter your search">
+                    <button type="submit">SEARCH</button>
+                    <a href="GAA-ADMIN-ADD.html"><button type="button">ADD PRODUCT</button></a>
+                </form>
+            </section>
+            <section class="addbox">
+                <h1>ADD PRODUCT</h1>
+                <form>
+                    <section class="name">
+                        <label for="nameInput">Name :</label>
+                        <input type="text" id="nameInput" name="name">
+                    </section>
+                    <section class="price">
+                        <label for="priceInput">Price :</label>
+                        <input type="number" id="priceInput" name="price">
+                    </section>
+                    <section class="detail">
+                        <label for="detailInput">Detail Product :</label>
+                        <input type="text" id ="detailInput" name="detail">
+                    </section>
+                    <section class="color">
+                        <label for="colorInput">Color :</label>
+                        <input type="checkbox" id="red" name="red">
+                        <label for="red">Red</label>
+                        <input type="checkbox" id="blue" name="blue">
+                        <label for="blue">Blue</label>
+                        <input type="checkbox" id="white" name="white">
+                        <label for="white">White</label>
+                        <input type="checkbox" id="green" name="green">
+                        <label for="green">Green</label>
+                        <input type="checkbox" id="black" name="black">
+                        <label for="black">Black</label>
+                        <input type="checkbox" id="beige" name="beige">
+                        <label for="beige">Beige</label>
+                        <input type="checkbox" id="yellow" name="yellow">
+                        <label for="yellow">Yellow</label>
+                        <input type="checkbox" id="pink" name="pink">
+                        <label for="pink">Pink</label>
+                    </section>
+                    <section class="size">
+                        <label for="sizeInput">Size :</label>
+                        <input type="checkbox" id="XS" name="XS">
+                        <label for="XS">XS</label>
+                        <input type="checkbox" id="S" name="S">
+                        <label for="S">S</label>
+                        <input type="checkbox" id="M" name="M">
+                        <label for="M">M</label>
+                        <input type="checkbox" id="L" name="L">
+                        <label for="L">L</label>
+                        <input type="checkbox" id="XL" name="XL">
+                        <label for="XL">XL</label>
+                        <input type="checkbox" id="XXL" name="XXL">
+                        <label for="XXL">XXL</label>
+                    </section>
+                    <section class="image">
+                        <label for="imageInput">Select image:</label>
+                        <input type="file" id="imageInput" name="image" accept="image/*">
+                    </section>
+                    <section class="button-submit">
+                        <a href="GAA-PRODUCT-ADD.html">
+                            <button type="button">SUBMIT</button>
+                        </a>
+                    </section>
+                </form>
+            </section>
+        </section>
+    </body>
+</html>
