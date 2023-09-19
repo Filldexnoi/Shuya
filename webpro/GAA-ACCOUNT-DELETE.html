@@ -34,35 +34,28 @@
                     <a href="GAA-ADMIN-ADD-ACCOUNT.html"><button type="button">ADD ACCOUNT</button></a>
                 </form>
             </section>
-            <section class="addbox">
-                <h1>ADD ACCOUNT</h1>
-                <form>
-                    <section class="name">
-                        <label for="nameInput">Name :</label>
-                        <input type="text" id="nameInput" name="name">
-                    </section>
-                    <section class="lastname">
-                        <label for="lastnameInput">Lastname :</label>
-                        <input type="text" id="lastnameInput" name="lastname">
-                    </section>
-                    <section class="age">
-                        <label for="ageInput">Age :</label>
-                        <input type="number" id="ageInput" name="age">
-                    </section>
-                    <section class="address">
-                        <label for="addressInput">Detail Product :</label>
-                        <input type="text" id ="addressInput" name="address">
-                    </section>
-                    <section class="email">
-                        <label for="emailInput">Email :</label>
-                        <input type="email" id ="emailInput" name="email">
-                    </section>
-                    <section class="button-submit">
-                        <a href="GAA-ACCOUNT-ADD.html">
-                            <button type="button">SUBMIT</button>
-                        </a>
-                    </section>
-                </form>
+            <section class="admin-container">
+                <h1>ADMIN LIST</h1>
+                <table id="adminTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Lastname</th>
+                            <th>Date edit</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                <tbody>
+                    <tr>
+                        <td>002</td>
+                        <td>Raveephat</td>
+                        <td>Pornaradon</td>
+                        <td>15/09/2023</td>
+                        <td><button class="edit">Edit</button><button class="delete">Delete</button></td>
+                    </tr>
+                </tbody>
+                </table>
             </section>
         </section>
     </body>

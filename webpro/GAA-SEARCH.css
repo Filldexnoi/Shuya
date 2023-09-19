@@ -47,7 +47,7 @@ button:hover {
     margin-top: 50px;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(4, auto);
     
 }
 .product-container img {
